@@ -8,6 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/eb20186e5c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -32,28 +33,29 @@
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
               class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black bg-[#000000] dark:border-gray-700">
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page">Home</a>
+              <li class="py-1">
+                <a href="#home"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home
+                </a>
               </li>
-              <li>
-                <a href="#"
+              <li class="py-1">
+                <a href="#about-us"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
                   Us</a>
               </li>
-              <li>
-                <a href="#"
+              <li class="py-1">
+                <a href="#services"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our
                   Services</a>
               </li>
-              <li>
-                <a href="#"
+              <li class="py-1">
+                <a href="#setup"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Setup</a>
               </li>
               <li>
-                <a href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
+                <a href="#">
+                  <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-1.5 text-center">Login</button>
+                </a>
               </li>
             </ul>
           </div>
@@ -61,77 +63,78 @@
       </nav>
     </header>
     <article>
-      <section class="grid grid-cols-1 md:grid-cols-12">
-        <div class="col-start-2 col-end-7 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+      <section id="home" class="grid grid-cols-1 md:grid-cols-12">
+        <div class="max-h-[630px] col-start-2 col-end-7 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
           <p class="text-7xl pb-4">Your fully monitored hosting platform!</p>
           <p class="text-5xl">WebEyes specializes in making monitoring as easy as possible, as well as making the setup of you applications seamless!</p>
         </div>
-        <div class="col-start-7 col-end-12 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+        <div class="max-h-[630px] col-start-7 col-end-12 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
           <img class="max-h-[600px]" src="../images/datacenter.jpg" alt="">
         </div>
       </section>
-      <section>
+      <section id="about-us">
         <div class="text-center">
-          <p class="text-7xl">About us!</p>
+          <p class="text-7xl">About us</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-12">
-          <div class="col-start-2 col-end-7 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+          <div class="max-h-[600px] col-start-2 col-end-7 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
             <img class="max-h-[600px]" src="../images/user.jpg" alt="">
           </div>
-          <div class="col-start-7 col-end-12 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+          <div class="max-h-[600px] col-start-7 col-end-12 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
             <p class="text-4xl">With the vision of creating the perfect hosting platform, we set out to build a platform that prioritizes performance, reliability, and user experience above all else. Our goal was to create a hosting solution that would empower businesses and individuals alike.</p>
           </div>
       </div>
       </section>
-      <section>
+      <section id="services">
         <div class="text-center">
-          <p class="text-7xl">About us!</p>
+          <p class="text-7xl pb-10">Our services</p>
         </div>
-        <div class="max-w-[500px] grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="max-w-[80%] flex items-center justify-center grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto">
         <div>
-          
-<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+<a class="block h-[250px] max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <p class="pb-2 text-white"><i class="fa-solid fa-chart-simple fa-2xl"></i></p>
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Monitoring</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Real-time monitoring solutions to keep an eye on your system's health and performance.</p>
   </a>
-  
         </div>
-        <div>
-          
-<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <div>    
+<a class="block h-[250px] max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <p class="pb-2 text-white"><i class="fa-solid fa-bolt fa-2xl"></i></p>
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Performance</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Advanced analytics tools to optimize and enhance your system's overall performance and efficiency.</p>
   </a>
-  
         </div>
-        <div>
-          
-<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <div>      
+<a class="block h-[250px] max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <p class="pb-2 text-white"><i class="fa-solid fa-upload fa-2xl"></i></p>
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Easy setup</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Simple and straightforward setup process designed to get you up and running with ease.</p>
   </a>
-  
         </div>
-        <div>
-          
-<a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <div>      
+<a class="block h-[250px] max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <p class="pb-2 text-white"><i class="fa-solid fa-money-bill fa-2xl"></i></p>
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Low cost</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">High-quality solutions at an affordable price point, ensuring value without compromising on performance.</p>
   </a>
-  
         </div>
       </div>
       </section>
-      <section class="grid grid-cols-1 md:grid-cols-2">
-        <div>TEST</div>
-        <div>TEST</div>
+      <section id="setup" class="pt-10">
+        <div class="text-center">
+          <p class="text-7xl">Setup</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12">
+          <div class="max-h-[330px] col-start-2 col-end-7 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+            <p class="text-4xl">With our intuitive setup process, your application will be online in no time. Create an account and experience our easy-to-use dashboard. With a few clicks, your application will be up and running!</p>
+          </div>
+          <div class="max-h-[330px] col-start-7 col-end-12 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen">
+            <p class="text-6xl pb-5">Experience it yourself!</p>
+            <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Sign up now!</button>
+          </div>
+      </div>
       </section>
     </article>
-
     <footer class="bg-[#000000]">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
